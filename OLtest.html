@@ -1,0 +1,32 @@
+<html>
+<head>
+<script type="text/JavaScript">
+
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+</script>
+
+<style type="text/css">
+</style>
+
+</head>
+<body onload="JavaScript:timedRefresh(60000);" style="margin: 0px;padding:0px;">
+
+<iframe width="100%" height="100%" src="http://www.cjlaughlin.com/availapp/outlook.php" style="top: 0px;left:0px;"></iframe>
+<script type="text/javascript">
+<!--
+	var currentTime = new Date()
+	var hours = currentTime.getHours()
+	var minutes = currentTime.getMinutes()
+	var seconds = currentTime.getSeconds()
+
+	if (minutes < 10)
+	minutes = "0" + minutes
+
+	document.write("<b>" + hours + ":" + minutes + " " + seconds + "</b>")
+//-->
+</script>
+
+</body>
+</html>
